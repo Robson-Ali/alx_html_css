@@ -1,4 +1,4 @@
-
+/*header section style */
 header {
   width: 100%;
   height: 80px;
@@ -123,6 +123,239 @@ header nav a:hover {
   text-align: center;
 }
 
+/* video section style */
+.videos-section {
+    background: #fff;
+    padding: 40px 0 60px 0;
+    border-top: 8px solid #AB50FF; /* Purple bar */
+    border-bottom: 8px solid #0D1533; /* Navy bar */
+}
+/* Section Heading */
+.videos-section h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    color: #333;
+}
+.videos-section .highlight {
+    color: #AB50FF;
+    font-weight: 700;
+}
+/* Tutorials Row */
+.videos-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* Video Card */
+.video-card {
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(174, 180, 198, 0.1);
+    border-radius: 18px;
+    width: 260px;
+    padding: 0 0 24px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Thumbnail */
+.video-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-thumbnail .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(171, 80, 255, 0.2);
+    font-size: 24px; /* Adjust depending on your play icon */
+    color: #AB50FF;
+}
+/* Card Content */
+.video-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #232340;
+    margin: 18px 0 10px 0;
+    text-align: left;
+    width: 85%;
+}
+.video-description {
+    font-size: 13px;
+    color: #8F8F8F;
+    margin-bottom: 18px;
+    width: 85%;
+    text-align: left;
+}
+
+/* Author & Meta Row */
+.video-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+.author-info {
+    display: flex;
+    align-items: center;
+}
+.author-avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.author-name {
+    font-size: 13px;
+    color: #AB50FF;
+    font-weight: 600;
+}
+
+/* Stars & Duration */
+.rating-duration {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    color: #AB50FF;
+    font-size: 13px;
+}
+.stars {
+    color: #AB50FF; /* Use filled font icon/sprite for stars */
+}
+.duration {
+    font-size: 13px;
+    font-weight: 500;
+    color: #AB50FF;
+}
+
+/* Membership section style */
+.membership-section {
+    background: #0D1526;
+    color: #fff;
+    padding: 60px 0 40px 0;
+    text-align: center;
+}
+.membership-section h2 {
+    color: #ad75f8;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.membership-section h2 span {
+    color: #fff;
+    font-weight: 400;
+}
+
+.membership-features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+.membership-feature {
+    flex: 1 1 180px;
+    max-width: 220px;
+    padding: 20px 10px 0 10px;
+}
+.feature-icon {
+    font-size: 2.8rem;
+    color: #ad75f8;
+    margin-bottom: 15px;
+}
+.feature-title {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.feature-desc {
+    color: #b6b6b6;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.membership-section .register-btn {
+    display: inline-block;
+    background: #ad75f8;
+    color: #fff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.membership-section .register-btn:hover {
+    background: #9d64e8;
+}
+
+/* FAQ section style */
+.faq-section {
+    background: #fcfdff;
+    padding: 60px 0 60px 0;
+    min-height: 80vh;
+}
+.faq-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 60px;
+    color: #1b222c;
+}
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 48px 64px;
+    width: 85%;
+    margin: 0 auto;
+}
+.faq-item {
+    background: none;
+    padding: 0;
+}
+.faq-question {
+    font-size: 1.12rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 18px;
+    color: #20242a;
+}
+.faq-answer {
+    font-size: 1rem;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #8893a6;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* footer section style */ 
 footer {
   background-color: #0b1626; /* Dark navy background */
   padding: 20px 0;
